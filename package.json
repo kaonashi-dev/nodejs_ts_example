@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-mysql-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/kaonashi-dev/nodejs-mysql-crud.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "ts-node-dev src/index.ts",
+    "tsc": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "express": "4.18.1"
+  }
+}

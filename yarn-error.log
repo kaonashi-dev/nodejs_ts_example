@@ -1,0 +1,35 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add typescript --dev
+
+PATH: 
+  /home/kaonashi_dev/.cargo/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/opt/flutter/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.3.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescript: ETIMEDOUT
+      at Timeout._onTimeout (/usr/lib/node_modules/yarn/lib/cli.js:141550:19)
+      at listOnTimeout (node:internal/timers:564:17)
+      at process.processTimers (node:internal/timers:507:7)
+
+npm manifest: 
+  {
+    "name": "nodejs-mysql-crud",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/kaonashi-dev/nodejs-mysql-crud.git",
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

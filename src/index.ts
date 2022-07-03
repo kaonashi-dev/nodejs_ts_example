@@ -1,13 +1,12 @@
 import express from 'express';
+import diaryRouter from './routes/diaries'
+
 const app = express();
 app.use(express.json());
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 
-app.get('/api', (_, res) => {
-   console.log('=> /api');
-   res.send('Test api');
-});
+app.use('/api/diaries', diaryRouter);
 
 app.listen(PORT, () => {
    console.log(`Server on runningon port ${PORT}`);

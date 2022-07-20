@@ -12,4 +12,13 @@ export default new class DiaryModel {
    getAll(): Array<Diary> {
       return this.diaries;
    }
+
+   getById(id: number): Diary | undefined {
+      const entry = this.diaries.find(item => item.id === id);
+      return entry;
+   }
+
+   add(diary: Diary) {
+      this.diaries.push(diary);
+   }
 }

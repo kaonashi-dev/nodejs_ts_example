@@ -8,3 +8,5 @@ export interface Diary {
    visibility: Visibility;
    comment: string;
 }
+
+export type newDiary = Omit<Diary, 'id'>

@@ -6,8 +6,6 @@ export default new class DiaryController {
    constructor() { }
 
    getAll(_: Request, res: Response): void {
-      console.log('aldfjaldsjflasjdlf');
-      
       const data = diaryService.getAll();
       res.send(data);
    }
